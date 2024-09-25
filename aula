@@ -45,9 +45,31 @@ imprimirmensagem("eu fui passear")*/
 
 var numero1 = Number(prompt("fale um numero"))
 var numero2 = Number(prompt("outro"))
-function imprimirnumero (primeiro,segundo){
+
+function imprimiradiçao (primeiro,segundo){
     var soma = primeiro + segundo
     return primeiro + segundo
 }
-var resultado = imprimirnumero(numero1,numero2)
+var resultado = imprimiradiçao (numero1,numero2)
 console.log(resultado)
+
+function imprimirsubtração (primeiro,segundo){
+    var subtração = primeiro - segundo
+    return primeiro - segundo
+}
+var resultado2 = imprimirsubtração(numero1,numero2)
+console.log(resultado2)
+
+function imprimirmultiplicaçao (primeiro,segundo){
+    var multiplicaçao = primeiro*segundo
+    return primeiro*segundo
+}
+var resultado3 = imprimirmultiplicaçao(numero1,numero2)
+console.log(resultado3)
+
+function imprimirdivisao (primeiro,segundo){
+    var divisao = primeiro/segundo
+    return primeiro/segundo
+}
+var resultado4 = imprimirdivisao (numero1,numero2)
+console.log(resultado4)

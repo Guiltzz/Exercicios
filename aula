@@ -1,0 +1,53 @@
+/*function imprimirmensagem(){
+    console.log ("Eu sou ",usuario,"tenho ",idade, "anos,moro em",cidade,"e sou ",profissao,".")
+
+}
+
+var usuario = "gustavo"
+    var idade = 16
+    var cidade = "Sao leopoldo"
+    var profissao = "estudante"
+imprimirmensagem()*/
+
+ /*   
+function imrpimirinformaçoes(nome,idade,cidade,profissao){
+console.log("Eu sou ",nome,", tenho ",idade," anos, moro em ",cidade," e sou ",profissao,".")
+
+}
+imrpimirinformaçoes("gustavo",16,"sao leopoldo","profissao")*/
+
+/*function imprimirnumero (numero1,numero2){
+    var soma = numero1+numero2
+    return soma
+}
+var resultado = imprimirnumero(2,6)
+console.log(resultado)*/
+
+/*function imprimirnumeros (numero1,numero2){
+    return numero1>=numero2
+}
+var resultado = imprimirnumeros(2,6)
+console.log(resultado)*/
+
+/*function imprimirnumero(numero){
+    return numero / 2 === 0
+
+}
+var resultado =imprimirnumero(4)
+console.log(resultado)*/
+
+/*function imprimirmensagem (mensagem){
+    var frase = mensagem.toUpperCase()
+    console.log(frase)
+    console.log(mensagem.length)
+}
+imprimirmensagem("eu fui passear")*/
+
+var numero1 = Number(prompt("fale um numero"))
+var numero2 = Number(prompt("outro"))
+function imprimirnumero (primeiro,segundo){
+    var soma = primeiro + segundo
+    return primeiro + segundo
+}
+var resultado = imprimirnumero(numero1,numero2)
+console.log(resultado)

@@ -1,7 +1,21 @@
-var array = ["Oi", "sumido", "tudo", "bem?","Saudades"]
+alert("===== ABRIGOS TEMPORÁRIOS ===== \n 1.Cadastrar abrigo \n 2.Listar abrigos \n 3.Procurar abrigo \n 4.Sair")
+var escolha = prompt("Escolha uma opção:")
 
-function imprimir (palavras){
-    return palavras.join(" ")
+var arrayAbrigos = []
+
+function cadastro (){
+    var nomeDoAbrigo = prompt ("Qual o nome do abrigo")
+    var endereço = prompt("Qual o endereço?")
+    var telefone = Number(prompt("Qual o telefone?"))
+    var capacidade = Number(prompt("Qual a capacidade de lotação do abrigo?"))
+
+    var objetoAbrigo = {
+        nome: nomeDoAbrigo,
+        endereço: endereço,
+        telefone: telefone,
+        lotaçao: capacidade
+    }
+    arrayAbrigos.push(objetoAbrigo)
 }
-var mensagem = imprimir(array)
-console.log(mensagem)
+cadastro()
+console.log(arrayAbrigos)

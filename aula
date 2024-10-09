@@ -1,21 +1,74 @@
-alert("===== ABRIGOS TEMPORÁRIOS ===== \n 1.Cadastrar abrigo \n 2.Listar abrigos \n 3.Procurar abrigo \n 4.Sair")
-var escolha = prompt("Escolha uma opção:")
 
-var arrayAbrigos = []
 
 function cadastro (){
     var nomeDoAbrigo = prompt ("Qual o nome do abrigo")
     var endereço = prompt("Qual o endereço?")
-    var telefone = Number(prompt("Qual o telefone?"))
+    var telefone = (prompt("Qual o telefone?"))
     var capacidade = Number(prompt("Qual a capacidade de lotação do abrigo?"))
+    var cidadeDoAbrigo = prompt("Qual a cidade?")
 
     var objetoAbrigo = {
         nome: nomeDoAbrigo,
         endereço: endereço,
         telefone: telefone,
-        lotaçao: capacidade
+        lotaçao: capacidade,
+        capacidade: cidadeDoAbrigo,
+        cidade: cidadeDoAbrigo
     }
     arrayAbrigos.push(objetoAbrigo)
+    alert("Abrigo cadastrado!")
+
 }
-cadastro()
-console.log(arrayAbrigos)
+
+function lista (objetoAbrigo){
+
+for (let i = 0; i<arrayAbrigos.length; i++){
+var objetoAbrigo = arrayAbrigos[i]
+
+var resultado ="Lista de Abrigos: \n"
+resultado += [`Código: ${i} - Nome: ${objetoAbrigo.nome}, Endereço: ${objetoAbrigo.endereço}, Telefone: ${objetoAbrigo.telefone}, Capacidade: ${objetoAbrigo.capacidade},Cidade: ${objetoAbrigo.cidade}\n`]
+}
+    return alert(resultado)
+}
+    
+var arrayAbrigos = []
+
+for(let i = 0; i!==4; i++){
+    var escolha = prompt("===== ABRIGOS TEMPORÁRIOS ===== \n 1.Cadastrar abrigo \n 2.Listar abrigos \n 3.Procurar abrigo \n 4.Sair \n Escolha uma opção:")  
+
+
+switch(escolha){
+    case "1":
+        
+    cadastro()
+
+break
+case "2":
+
+lista ()
+
+break
+case "3":
+    for (let i = 0; i < array.length; i++) {
+        const element = array [i];
+        
+    }
+var cidadeDoUsuario = prompt("Qual a sua cidade?")
+if (arrayAbrigos.includes (cidadeDoUsuario) === true){
+    alert()
+}
+else {
+    alert("Que pena, nao tem nenhum abrigo nessa cidade")
+}
+
+
+
+break
+case "4":
+alert("Você saiu")
+
+break
+default:
+        alert("Opção inválida! Tente novamente.")
+}
+}
